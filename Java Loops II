@@ -1,0 +1,23 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int a,b,c,d=1,n,sum;
+    n = scanner.nextInt();
+    for(int i = 1; i <= n; i++) {
+        a = scanner.nextInt();
+        b = scanner.nextInt();
+        c = scanner.nextInt();
+        for(int j = 1; j <= c; j++) {
+            sum = a + (d * b);
+            System.out.print(sum + " ");
+            a = sum;
+            d = d+d;
+        }
+        System.out.println();
+        d = 1;
+    }                
+}
+}
